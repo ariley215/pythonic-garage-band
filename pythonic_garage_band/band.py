@@ -38,7 +38,7 @@ class Guitarist:
 
     def __str__(self):
         """
-        Return a string representation of the guitarist.
+       
 
         Returns:
         str: A formatted string describing the guitarist and their instrument.
@@ -47,13 +47,16 @@ class Guitarist:
 
     def __repr__(self):
         """
-        Return a string representation of the Guitarist instance.
-
+      
         Returns:
         str: A formatted string describing the guitarist instance.
         """
         return f"Guitarist instance. Name = {self.name}"
+    def __init__(self, name="Jimi Hendrix" ):
+        self.name = name
 
+    def get_instrument(cls):
+          return "guitar"
 
 class Drummer:
     """
@@ -74,7 +77,7 @@ class Drummer:
 
     def __str__(self):
         """
-        Return a string representation of the drummer.
+       
 
         Returns:
         str: A formatted string describing the drummer and their instrument.
@@ -83,12 +86,18 @@ class Drummer:
 
     def __repr__(self):
         """
-        Return a string representation of the Drummer instance.
+      
 
         Returns:
         str: A formatted string describing the drummer instance.
         """
         return f"Drummer instance. Name = {self.name}"
+    
+    def __init__(self, name="Ginger Baker"):
+        self.name = name
+
+    def get_instrument(cls):
+        return "drums"
 
 
 class Bassist:
@@ -110,7 +119,7 @@ class Bassist:
 
     def __str__(self):
         """
-        Return a string representation of the bassist.
+        
 
         Returns:
         str: A formatted string describing the bassist and their instrument.
@@ -119,9 +128,25 @@ class Bassist:
 
     def __repr__(self):
         """
-        Return a string representation of the Bassist instance.
+        
 
         Returns:
         str: A formatted string describing the bassist instance.
         """
         return f"Bassist instance. Name = {self.name}"
+    
+    def __init__(self, name="Flea"):
+        self.name = name
+    
+    def get_instrument(cls):
+        return "bass"
+
+class Musician():
+    """ Base/super class for different musicians. Each muscian has a name and an instrument """
+    
+    def __init__(self, name="" ):
+        self.name = name
+
+
+    def get_instrument(self):
+        return "unknown"
