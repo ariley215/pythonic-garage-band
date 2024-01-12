@@ -1,20 +1,25 @@
 # LAB - Class xx
 
-Project: Project Name Here
-Author: Student/Group Name
-Links and Resources
-back-end server url (when applicable)
-front-end application (when applicable)
-Setup
-.env requirements (where applicable)
-i.e.
+Project: Garage Band with OOP
 
-PORT - Port Number
-DATABASE_URL - URL to the running Postgres instance/db
-How to initialize/run your application (where applicable)
-e.g. python main.py
-How to use your library (where applicable)
+Author: Andrea Thiel
+
+## Links and Resources
+
+## Setup
+
+.env requirements (where applicable)
+  .venv
+
+## How to initialize/run your application 
+
+ python pythonic_garage_band/band.py
+ 
+## How to use your library (where applicable)
+
 Tests
-How do you run tests?
-Any tests of note?
+How do you run tests? pytest or pytest-watch
+
 Describe any tests that you did not complete, skipped, etc
+
+skipped - No code for last 5 tests. 
