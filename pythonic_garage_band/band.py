@@ -1,3 +1,9 @@
+class Band():
+  
+    def __init__(self, name="Niravana", members=None):
+        self.members = members or None
+        self.name = name
+      
 
 class Guitarist():
     
@@ -32,3 +38,5 @@ class Bassist():
         return f'My name is {self.name} and I play bass'
     def __repr__(self):
         return f"Bassist instance. Name = {self.name}"
+# class Musicians():
+    
