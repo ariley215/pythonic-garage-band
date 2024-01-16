@@ -57,6 +57,9 @@ class Guitarist:
 
     def get_instrument(cls):
           return "guitar"
+    
+    def play_solo(self):
+        return "face melting guitar solo"
 
 class Drummer:
     """
@@ -95,9 +98,13 @@ class Drummer:
     
     def __init__(self, name="Ginger Baker"):
         self.name = name
-
-    def get_instrument(cls):
+        
+    @staticmethod
+    def get_instrument():
         return "drums"
+    
+    def play_solo(self):
+        return "rattle boom crash"
 
 
 class Bassist:
@@ -140,6 +147,9 @@ class Bassist:
     
     def get_instrument(cls):
         return "bass"
+    
+    def play_solo(self):
+        return "bom bom buh bom"
 
 class Musician():
     """ Base/super class for different musicians. Each muscian has a name and an instrument """
